@@ -11,12 +11,18 @@ class People {
     //inner  class Endereco{
         //var rua : String = "Rua teste"
     //}
+
+    constructor()
+    //FUNCTION UNINDO NOME E CPF UTILIZANDO O $ INTERPOLACAO
+    fun peopleInfo() = "$nome - $cpf"
 }
 
 fun main() {
     val jeff = People()
 
-    println(jeff.nome)
-    println(jeff.cpf)
+    //println(jeff.nome)
+    //println(jeff.cpf)
     //println(jeff.Endereco().rua)
+
+    println(jeff.peopleInfo())
 }
