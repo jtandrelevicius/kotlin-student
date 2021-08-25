@@ -1,8 +1,8 @@
 package student.test
 
-open class People (
-    open val name: String,
-    open val cpf: String
+abstract class People (
+    val name: String,
+    val cpf: String
     )
 
 
