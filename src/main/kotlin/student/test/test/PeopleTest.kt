@@ -3,12 +3,7 @@ package student.test.test
 import student.test.People
 
 fun main() {
-    val jeff = People()
-
-    //println(jeff.nome)
-    //println(jeff.cpf)
-    //println(jeff.Endereco().rua)
-
-    println(jeff.peopleInfo())
-
+    val jeff = People(name = "Jefferson tiago", cpf = "000.200.200-56")
+    println(jeff.name)
+    println(jeff.cpf)
 }
