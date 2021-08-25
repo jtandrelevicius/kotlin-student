@@ -5,8 +5,15 @@ import java.math.BigDecimal
 abstract class Employee(
    name: String,
    cpf: String,
-   val wage: BigDecimal
+   val wage: Double
 
 ) : People(name, cpf) {
-   abstract fun calculoAuxilio()
+   protected abstract fun calculoAuxilio(): Double
+
+   override fun toString(): String = """"
+      Nome: $name
+      CPF: $cpf
+      Salario: $wage
+      Auxilio: ${calculoAuxilio()}
+   """.trimMargin()
 }
